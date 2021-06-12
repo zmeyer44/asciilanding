@@ -1,0 +1,56 @@
+:root {
+  line-height: 1.4;
+  font-weight: 300;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container {
+  width: clamp(400px, 60vw, 750px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ascii {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: monospace;
+  color: #48cae4;
+  word-break: break-all;
+  font-size: clamp(400px/44, 60vw/44, 750px/44);
+}
+
+@media only screen and (max-width: 400px) {
+  #container {
+    width: 100vw;
+  }
+  .ascii {
+    font-size: 2.27273vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
